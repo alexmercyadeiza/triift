@@ -54,7 +54,7 @@ export default function About() {
             <div
               className="h-52 rounded-t-xl bg-cover bg-top md:h-full"
               style={{
-                backgroundImage: `url('https://ik.imagekit.io/et8vxrzxxdj/triift/bakery-owner_8pY64BP7f.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1660409502545')`,
+                backgroundImage: `url('https://images.unsplash.com/photo-1488905971602-47901d26961b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')`,
               }}
             ></div>
           </div>
@@ -96,7 +96,6 @@ export default function About() {
             </div>
 
             <Footer />
-
           </div>
         </div>
       </div>
