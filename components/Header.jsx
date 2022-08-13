@@ -23,6 +23,16 @@ export default function Header() {
           >
             Get capital
           </div>
+
+          <a
+            href="https://bit.ly/TriiftCalendar"
+            className="hover:opacity-80 cursor-pointer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book a session
+          </a>
+
           <div
             onClick={() => router.push("/about")}
             className={
@@ -33,15 +43,23 @@ export default function Header() {
           >
             about us
           </div>
+
           <a
-            href="medium.com/triift-africa"
+            href="https://medium.com/triift-africa"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
             blog
           </a>
-          <div className="hover:opacity-80 cursor-pointer">resources</div>
+          <a
+            href="https://selar.co/m/TriiftAfrica"
+            className="hover:opacity-80 cursor-pointer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            resources
+          </a>
         </div>
       </div>
     </div>
