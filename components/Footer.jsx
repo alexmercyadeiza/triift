@@ -140,12 +140,12 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://wa.me/message/ZJ7GKTAQOKNYA1"
+            href="https://medium.com/triift-africa"
             target="_blank"
             rel="noreferrer"
           >
             <svg
-              xmlns="https://medium.com/triift-africa"
+               xmlns="http://www.w3.org/2000/svg"
               className="w-4 fill-current md:w-5"
               viewBox="0 0 493.32 280.17"
             >

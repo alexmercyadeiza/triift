@@ -49,7 +49,7 @@ export default function Home() {
 
     if (data.id.length > 0) setSuccess(true);
 
-    toast.success('Thank you for joining our waitlist.')
+    toast.success("Thank you for joining our waitlist.");
     // console.log(data);
     // .then((response) => response.text())
     // .then((result) => console.log(result))
@@ -70,7 +70,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex h-screen flex-col justify-between text-black">
+      {/** h-screen flex flex-col justify-between */}
+      <div className="text-black">
         <Header />
 
         <div className="">
@@ -143,8 +144,248 @@ export default function Home() {
               style={{
                 backgroundImage: `url('https://ik.imagekit.io/et8vxrzxxdj/triift/bakery-owner_8pY64BP7f.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1660409502545')`,
               }}
-
             ></div>
+          </div>
+        </div>
+
+        <div className="md:px-20 p-6 md:mt-40 mt-6 space-y-8">
+          <div className="md:text-4xl text-2xl font-semibold">
+            How we help growing business owners.
+          </div>
+          <div className="md:w-1/2">
+            We think of ourselves as long term growth partners, and we&rsquo;re
+            proud to keep helping business owners stay focused on what matters
+            most; their business. Here&rsquo;s how
+          </div>
+          <div className="grid md:grid-cols-3 gap-16">
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.pexels.com/photos/7983134/pexels-photo-7983134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+                }}
+              ></div>
+              <div className="text-xl font-semibold">Capital</div>
+              <div>
+                Need cash to stock up shop, finance an invoice, upgrade your
+                equipments, open a new store, hire more hands, or expand your
+                business? Focus on growing your business with capital that keeps
+                you running smoothly.
+              </div>
+
+              <div
+                onClick={() => router.push("http://www.bit.ly/TriiftCapital")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">Apply for capital</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1611432579402-7037e3e2c1e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80')`,
+                }}
+              ></div>
+              {/* <div className="bg-gray-100 p-10">
+            </div> */}
+              <div className="text-xl font-semibold">Growth Advisory</div>
+              <div>
+                One size never fits all with unique businesses like yours.
+                Connect with our experts and get tailored, hands on advisory
+                that unearths growth opportunities for your specific business
+                context without the fluff.
+              </div>
+
+              <div
+                onClick={() => router.push("https://bit.ly/TriiftCalendar")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">Schedule a Session</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.pexels.com/photos/3894378/pexels-photo-3894378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+                }}
+              ></div>
+              <div className="text-xl font-semibold">Founder Community</div>
+              <div>
+                Grow together with a community of business owners designed to
+                help you thrive. Build rich relationships, learn from shared
+                growth experiences, and grow your business with expert tips from
+                growing business founders like yourself.
+              </div>
+
+              <div
+                onClick={() => router.push("http://t.me/triiftafrica")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">Join the Community</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.pexels.com/photos/8962454/pexels-photo-8962454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+                }}
+              ></div>
+              <div className="text-xl font-semibold">
+                Resources and Templates
+              </div>
+              <div>
+                All you need to begin, operate, and grow your business. From
+                marketing to business finance, and more, Never be lost again
+                with rich courses, resources and templates built to help you
+                unleash next level business growth.
+              </div>
+
+              <div
+                onClick={() => router.push("https://selar.co/m/TriiftAfrica")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">See Available Resources</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1429216967620-ece20ff3a5f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80')`,
+                }}
+              ></div>
+              <div className="text-xl font-semibold">
+                Business Documentations
+              </div>
+              <div>
+                Get business plans, pitch decks, market research, investment
+                proposals, feasibility studies, financial models, company
+                profile and other robust documents that helps you attract
+                investment, make data-driven decisions, and positions you for
+                growth.
+              </div>
+
+              <div
+                onClick={() => router.push("https://bit.ly/RequestDocumentTA")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">Request a Document</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div
+                className="h-96 rounded-xl bg-center bg-cover"
+                style={{
+                  backgroundImage: `url('https://images.unsplash.com/photo-1487724077104-5196c4e819fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80')`,
+                }}
+              ></div>
+              <div className="text-xl font-semibold">Our Blog</div>
+              <div>
+                What you need to know about building a business from day one.
+                Explore Fresh takes, explainers, deep dives, easily digestible
+                business wisdom, and simple breakdowns you need to level up your
+                growing business.
+              </div>
+
+              <div
+                onClick={() => router.push("medium.com/triift-africa")}
+                className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
+              >
+                <div className="capitalize">Read Our Blog</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -154,4 +395,41 @@ export default function Home() {
       </div>
     </div>
   );
+}
+
+{
+  /**
+
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+ 
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+ 
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "334278140487721");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+ 
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+ 
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+*/
 }
