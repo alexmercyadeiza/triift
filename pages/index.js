@@ -149,7 +149,7 @@ export default function Home() {
         </div>
 
         <div className="md:px-20 p-6 md:mt-40 mt-6 space-y-8">
-          <div className="md:text-4xl text-2xl font-semibold">
+          <div className="md:text-5xl md:w-1/2 tracking-tight text-2xl font-semibold">
             How we help growing business owners.
           </div>
           <div className="md:w-1/2">
@@ -412,8 +412,7 @@ export default function Home() {
       chatbox.setAttribute("page_id", "334278140487721");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
- 
-    <!-- Your SDK code -->
+
     <script>
       window.fbAsyncInit = function() {
         FB.init({
