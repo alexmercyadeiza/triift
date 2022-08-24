@@ -128,7 +128,9 @@ export default function Home() {
 
                     <button
                       onClick={() =>
-                        router.push("https://bit.ly/TriiftCalendar")
+                        router.push(
+                          "https://paystack.com/pay/consulttriiftafrica"
+                        )
                       }
                       className="btn-outline border-purple-one text-purple-one hover:bg-purple-one hover:text-white btn px-6 font-medium capitalize"
                     >
@@ -213,7 +215,9 @@ export default function Home() {
               </div>
 
               <div
-                onClick={() => router.push("https://bit.ly/TriiftCalendar")}
+                onClick={() =>
+                  router.push("https://paystack.com/pay/consulttriiftafrica")
+                }
                 className="text-purple-one hover:text-purple-two cursor-pointer flex items-center space-x-3"
               >
                 <div className="capitalize">Schedule a Session</div>
