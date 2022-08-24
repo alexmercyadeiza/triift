@@ -17,7 +17,7 @@ export default function Footer() {
 
         <div>
           <a
-            href="https://bit.ly/TriiftCalendar"
+            href="https://paystack.com/pay/consulttriiftafrica"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
@@ -145,7 +145,7 @@ export default function Footer() {
             rel="noreferrer"
           >
             <svg
-               xmlns="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
               className="w-4 fill-current md:w-5"
               viewBox="0 0 493.32 280.17"
             >

@@ -25,7 +25,7 @@ export default function Header() {
           </div>
 
           <a
-            href="https://bit.ly/TriiftCalendar"
+            href="https://paystack.com/pay/consulttriiftafrica"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
