@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Analytics from "../components/Analytics";
+import FooterTwo from '../components/FooterTwo';
 
 export default function Home() {
   const router = useRouter();
@@ -50,10 +51,6 @@ export default function Home() {
     if (data.id.length > 0) setSuccess(true);
 
     toast.success("Thank you for joining our waitlist.");
-    // console.log(data);
-    // .then((response) => response.text())
-    // .then((result) => console.log(result))
-    // .catch((error) => console.log("error", error));
   };
 
   const submitEmail = (e) => {
@@ -70,7 +67,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/** h-screen flex flex-col justify-between */}
       <div className="text-black">
         <Header />
 
@@ -393,46 +389,36 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="md:px-20 px-6 bg-[#D7CBFF] pt-14 pb-20 md:pb-14 md:mt-20 mt-6 space-y-8 grid place-items-center">
+          <div className="hidden md:grid text-3xl text-center text-black">
+            See how we are supporting passions, growing businesses, <br /> and
+            reimagining growth opportunities for MSMEs in Africa.
+          </div>
+
+          <div className="text-2xl md:hidden grid text-center text-black">
+            See how we are supporting passions, growing businesses, and
+            reimagining growth opportunities for MSMEs in Africa.
+          </div>
+
+          <div className="text-center">
+            Small Business Tips, Expert Insights, Support Articles, Resources,
+            Product Updates, and Case Studies delivered freshly to your inbox!
+          </div>
+
+          <div
+            onClick={() => router.push("https://bit.ly/WebNewsletterTA")}
+            className="cursor-pointer border-none bg-purple-one hover:bg-purple-two text-white btn px-6 capitalize"
+          >
+            Subscribe to our Newsletter
+          </div>
+        </div>
+
+        <FooterTwo />
+
         <div className="p-6 md:p-10">
           <Footer />
         </div>
       </div>
     </div>
   );
-}
-
-{
-  /**
-
-<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
- 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
- 
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "334278140487721");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
- 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-*/
 }
