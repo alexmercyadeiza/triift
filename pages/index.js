@@ -389,8 +389,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="md:px-20 px-6 bg-[#D7CBFF] pt-14 pb-20 md:pb-14 md:mt-20 mt-6 space-y-8 grid place-items-center">
-          <div className="hidden md:grid text-3xl text-center text-black">
+        <div className="md:px-20 px-6 bg-[#e3dcfc] pt-36 pb-20 md:pb-36 md:mt-20 mt-6 space-y-8 grid place-items-center">
+          <div className="hidden md:grid text-3xl text-center font-semibold text-black">
             See how we are supporting passions, growing businesses, <br /> and
             reimagining growth opportunities for MSMEs in Africa.
           </div>
