@@ -1,7 +1,15 @@
 import { useRouter } from "next/router";
+import { useState } from 'react';
 
 export default function Header() {
   const router = useRouter();
+   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false); // State for submenu
+
+  // Function to toggle the submenu
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen);
+  };
+  
   return (
     <div className="p-6 md:p-10">
       <div className="flex items-center justify-between">
@@ -12,26 +20,60 @@ export default function Header() {
           alt="Triift Africa."
         />
 
-        <div className="border-purple-one hover:bg-purple-one text-purple-one hover:border-purple-one btn btn-outline px-6 capitalize md:hidden">
+        {/* <div className="border-purple-one hover:bg-purple-one text-purple-one hover:border-purple-one btn btn-outline px-6 capitalize md:hidden">
           Get capital
-        </div>
+        </div> */}
 
         <div className="hidden items-center space-x-7 font-medium capitalize md:flex">
-          <div
+        {/*   <div
             onClick={() => router.push("http://www.bit.ly/TriiftCapital")}
             className="cursor-pointer border-purple-one hover:bg-purple-one text-purple-one hover:border-purple-one btn btn-outline px-6 capitalize"
           >
+            Learn
+          </div> */}
+
+          <div 
+            onClick={() => router.push("http://www.bit.ly/TriiftCapital")}
+            className="hover:opacity-80 cursor-pointer"
+          >
             Get capital
           </div>
+          <div>
+          <div
+            onClick={toggleSubMenu} className="cursor-pointer"
+          >
+            Learn
+          </div>
+          {isSubMenuOpen && (
+            <div className="absolute left-200 mt-2 bg-white border border-gray-300 p-2 flex flex-col ">
+              <a
+                href="https://blog.triift.africa/"
+                className="hover:opacity-80 cursor-pointer p-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Blog
+              </a>
+              <a
+                href="https://selar.co/m/TriiftAfrica"
+                className="hover:opacity-80 cursor-pointer p-2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Selar
+              </a>
+            </div>
+          )}
+          </div>
 
-          <a
+         {/*  <a
             href="https://paystack.com/pay/consulttriiftafrica"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
             Book a session
-          </a>
+          </a> */}
 
           <div
             onClick={() => router.push("/about")}
@@ -44,22 +86,29 @@ export default function Header() {
             about us
           </div>
 
-          <a
+          <div
+            onClick={() => router.push("https://banking.triift.africa")}
+            className="cursor-pointer border-purple-one hover:bg-purple-one text-purple-one hover:border-purple-one btn btn-outline px-6 capitalize"
+          >
+            Log In  |  Sign Up
+          </div>
+
+        {/*   <a
             href="https://medium.com/triift-africa"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
             blog
-          </a>
-          <a
+          </a> */}
+         {/*  <a
             href="https://selar.co/m/TriiftAfrica"
             className="hover:opacity-80 cursor-pointer"
             target="_blank"
             rel="noreferrer"
           >
             resources
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
